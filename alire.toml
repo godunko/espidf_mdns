@@ -1,9 +1,13 @@
 name = "espidf_mdns"
 version = "0.1.0-dev"
 website = "https://github.com/godunko/espidf_mdns"
-description = "Ada/ESP-IDF: ESP-Protocols/mDNS Bindings"
+description = "Ada/ESP-IDF: mDNS bindings"
 long-description = """
-Ada bindings for the ESP-IDF mDNS (Multicast DNS) component, enabling ESP32 microcontrollers running Ada to perform zero-configuration networking.
+Ada bindings for the mDNS (Multicast DNS) component from Espressif's ESP-Protocols
+(`espressif/mdns`).
+
+Covers initialization of the mDNS service and setting of the host name,
+so the device is reachable as `<hostname>.local` on the local network.
 """
 
 authors = ["Vadim Godunko"]
